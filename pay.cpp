@@ -28,11 +28,6 @@ void readData(vector<Person> &list) {
       inputFile >> fName;
       while (!inputFile.eof())
       {
-        //push_back may construct a temporary
-        //object which then will need to get
-        //moved into the vector v whereas emplace_back
-        //just forwards the argument and construct it
-        //directly in place with no copies or moves needed.
           inputFile >> lName >> hours >> rate;
           getline(inputFile, line);
           list.emplace_back(fName, lName, hours, rate);
