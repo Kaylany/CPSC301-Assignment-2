@@ -1,4 +1,6 @@
-//begin person.h
+// Kayla Nguyen
+// Section 1
+
 #ifndef PERSON_H
 #define PERSON_H
 
@@ -12,7 +14,7 @@ private:
   float payRate;
   float hoursWorked;
 public:
-  Person();
+  Person(string fName, string lName, float rate, float hours);
   void setLastName(string lName);
   string getLastName();
   void setFirstName(string fName);

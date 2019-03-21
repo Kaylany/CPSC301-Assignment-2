@@ -1,12 +1,13 @@
-#include "person.h"
-#include <string>
-#include <iostream>
+// Kayla Nguyen
+// Section 1
 
-Person::Person() {
-  firstName = "";
-  lastName = "";
-  payRate = 0.00;
-  hoursWorked = 0.0;
+#include "person.h"
+
+Person::Person(string fName, string lName, float rate, float hours) {
+  firstName = fName;
+  lastName = lName;
+  payRate = rate;
+  hoursWorked = hours;
 }
 
 void Person::setLastName(string lName) {
